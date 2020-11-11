@@ -43,7 +43,7 @@ button, input, input::placeholder, textarea {
   font-family: 'Roboto', 'Arial', sans-serif;
 }
 
-button {
+button, input, a, i {
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
@@ -510,6 +510,7 @@ section.book_a_table .container .content .btn-reservation:hover {
   text-transform: uppercase;
   cursor: pointer;
   width: 22%;
+  min-width: 146.517px;
 }
 
 .contact .container .right form input[type=submit]:hover {
@@ -558,7 +559,38 @@ footer .container .logo-footer {
   font-size: 2.3rem;
 }
 
-footer .container .social-media i:nth-child(2) {
-  margin: 0 .6em;
+footer .container .social-media a {
+  color: #a6a6a6;
+}
+
+footer .container .social-media a i {
+  width: 30px;
+  padding: .3em;
+  border-radius: 50%;
+}
+
+footer .container .social-media a i:hover {
+  opacity: .8;
+}
+
+footer .container .social-media a:nth-child(1) i {
+  background-color: #a6a6a6;
+  color: white;
+}
+
+footer .container .social-media a:nth-child(2) {
+  margin: 0 .3em;
+}
+
+footer .container .social-media a:nth-child(2) i {
+  background-color: #1771E6;
+  color: white;
+}
+
+footer .container .social-media a:nth-child(3) i {
+  text-align: center;
+  color: white;
+  background-color: #C32AA3;
+  padding: .3em;
 }
 /*# sourceMappingURL=style.css.map */

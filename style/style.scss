@@ -14,7 +14,7 @@ body{
 button, input, input::placeholder, textarea{
     font-family: 'Roboto', 'Arial', sans-serif;
 }
-button{
+button, input, a, i{
     transition: all .3s ease;
 }
 h1, h2, h3, h4, h5{
@@ -301,6 +301,7 @@ section.book_a_table{
                 input[type=submit]{
                     @include btnIn();
                     width: 22%;
+                    min-width: 146.517px;
                 }
             }
            
@@ -331,9 +332,37 @@ footer{
             font-size: 2.3rem;
         }
         .social-media{
-            i{
+            a{
+                color: $light-white;
+                i{
+                    width: 30px;
+                    padding: .3em;
+                    border-radius: 50%;
+                    &:hover{
+                        opacity: .8;
+                    }
+                }
+                
+                &:nth-child(1){
+                    i{
+                        background-color: $light-white;
+                        color: $white;
+                    }
+                }
                 &:nth-child(2){
-                    margin: 0 .6em;
+                    margin: 0 .3em;
+                    i{
+                        background-color: $blue;
+                        color: $white;
+                    }
+                }
+                &:nth-child(3){
+                    i{
+                        text-align: center;
+                        color: $white;
+                        background-color: #C32AA3;
+                        padding: .3em;
+                    }
                 }
             }
         }
