@@ -1,0 +1,564 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&display=swap");
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+button, input, input::-webkit-input-placeholder, textarea {
+  font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+button, input, input:-ms-input-placeholder, textarea {
+  font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+button, input, input::-ms-input-placeholder, textarea {
+  font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+button, input, input::placeholder, textarea {
+  font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+button {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+h1, h2, h3, h4, h5 {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #222023;
+}
+
+header .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+  height: 65px;
+}
+
+header .content .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .content .left .logo {
+  text-decoration: none;
+  color: #9B8D71;
+  font-family: 'Arizonia', cursive;
+  font-size: 1.8rem;
+  padding: .6rem 1em .6rem 0em;
+}
+
+header .content nav.right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .content nav.right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .content nav.right ul li {
+  list-style: none;
+  margin: 0 15px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+header .content nav.right ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+header .content nav.right ul li:hover {
+  border-bottom: 1px solid white;
+}
+
+section.book_a_table {
+  background-image: url(/photos/header-photo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+
+section.book_a_table .container {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.book_a_table .container .content span {
+  text-decoration: none;
+  color: #9B8D71;
+  font-family: 'Arizonia', cursive;
+  font-size: 1.8rem;
+  color: #FAB28E;
+  font-size: 3rem;
+}
+
+section.book_a_table .container .content p {
+  margin: 0;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+section.book_a_table .container .content .btn-view-menu {
+  background-color: transparent;
+  color: #FAB28E;
+  font-weight: 700;
+  border: #FAB28E 2px solid;
+  padding: 12px 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+section.book_a_table .container .content .btn-view-menu:hover {
+  background-color: #FAB28E;
+  color: #75321C;
+}
+
+section.book_a_table .container .content .btn-reservation {
+  background-color: #FAB28E;
+  color: #75321C;
+  font-weight: 700;
+  border: #FAB28E 2px solid;
+  text-transform: uppercase;
+  padding: 12px 14px;
+  cursor: pointer;
+}
+
+section.book_a_table .container .content .btn-reservation:hover {
+  background-color: #75321C;
+  color: #FAB28E;
+}
+
+section.book_a_table .container .content .btn-reservation:hover {
+  border: 2px solid #75321C;
+}
+
+.slogan {
+  background-color: #FAB28E;
+}
+
+.slogan .container {
+  height: 150px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+}
+
+.slogan .left p {
+  margin: 0;
+  font-weight: 700;
+}
+
+.slogan .right .btn-reservation {
+  background-color: #FAB28E;
+  color: #75321C;
+  font-weight: 700;
+  border: #FAB28E 2px solid;
+  text-transform: uppercase;
+  padding: 12px 14px;
+  cursor: pointer;
+  border: 2px solid #75321C;
+}
+
+.slogan .right .btn-reservation:hover {
+  background-color: #75321C;
+  color: #FAB28E;
+}
+
+.menu {
+  background-color: #222023;
+}
+
+.menu .container .menu-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 4em;
+}
+
+.menu .container .menu-header h2 {
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.menu .container .menu-header span {
+  text-decoration: none;
+  color: #9B8D71;
+  font-family: 'Arizonia', cursive;
+  font-size: 1.8rem;
+  color: #FAB28E;
+  margin-top: .3em;
+  position: relative;
+}
+
+.menu .container .menu-header span::after {
+  content: "";
+  display: inherit;
+  position: relative;
+  width: 88px;
+  bottom: -22px;
+  border-bottom: 1px solid #FAB28E;
+  margin: 0 auto;
+}
+
+.menu .container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu .container .content .left, .menu .container .content .right {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu .container .content .left {
+  margin-right: 2em;
+}
+
+.menu .container .content .meal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3em 0;
+  color: white;
+}
+
+.menu .container .content .meal .photo-meal-container {
+  margin-right: 3em;
+}
+
+.menu .container .content .meal .photo-meal-container span.photo-meal {
+  display: block;
+  height: 5em;
+  width: 5em;
+  background-image: url("/photos/Fish-Fillet.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-position: center;
+}
+
+.menu .container .content .meal .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu .container .content .meal .details .name-and-contents h3 {
+  margin: .6em 0;
+}
+
+.menu .container .content .meal .details .prise {
+  margin: .6em 0;
+}
+
+.menu .container .content .meal .details .prise span {
+  color: #FAB28E;
+  margin-left: 19px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.plate-of-the-day {
+  background-image: url("/photos/plate-of-the-day.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.plate-of-the-day .container {
+  padding: 6em 0;
+}
+
+.plate-of-the-day .container .content {
+  background-color: #222023;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  padding: 0 4em;
+  max-width: 370px;
+}
+
+.plate-of-the-day .container .content h3 {
+  text-decoration: none;
+  color: #9B8D71;
+  font-family: 'Arizonia', cursive;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  font-size: 2.3rem;
+  color: #FAB28E;
+}
+
+.plate-of-the-day .container .content span {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.plate-of-the-day .container .content button {
+  background-color: transparent;
+  color: #FAB28E;
+  font-weight: 700;
+  border: #FAB28E 2px solid;
+  padding: 12px 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.plate-of-the-day .container .content button:hover {
+  background-color: #FAB28E;
+  color: #75321C;
+}
+
+.contact {
+  background-color: #222023;
+  color: white;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact .container .left {
+  width: 30%;
+}
+
+.contact .container .left h2 {
+  letter-spacing: 2px;
+  font-size: 1.8em;
+}
+
+.contact .container .left p {
+  color: #a6a6a6;
+}
+
+.contact .container .left .contact-information {
+  padding-top: 1em;
+}
+
+.contact .container .left .contact-information .content {
+  margin-bottom: 1em;
+  font-weight: 700;
+}
+
+.contact .container .left .contact-information .content i {
+  color: #FAB28E;
+  margin-right: 3.8em;
+  width: 22px;
+}
+
+.contact .container .right {
+  width: 50%;
+}
+
+.contact .container .right form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact .container .right form input, .contact .container .right form textarea {
+  min-width: 100px;
+  margin: .3em 0;
+  background-color: transparent;
+  border: solid 1px #a6a6a6;
+  padding: 1em 0 1em 1em;
+  color: white;
+}
+
+.contact .container .right form input::-webkit-input-placeholder-shown, .contact .container .right form textarea::-webkit-input-placeholder-shown {
+  color: #a6a6a6;
+}
+
+.contact .container .right form input:-ms-input-placeholder-shown, .contact .container .right form textarea:-ms-input-placeholder-shown {
+  color: #a6a6a6;
+}
+
+.contact .container .right form input::-ms-input-placeholder-shown, .contact .container .right form textarea::-ms-input-placeholder-shown {
+  color: #a6a6a6;
+}
+
+.contact .container .right form input::placeholder-shown, .contact .container .right form textarea::placeholder-shown {
+  color: #a6a6a6;
+}
+
+.contact .container .right form textarea {
+  resize: none;
+  min-height: 6em;
+}
+
+.contact .container .right form input[type=submit] {
+  background-color: transparent;
+  color: #FAB28E;
+  font-weight: 700;
+  border: #FAB28E 2px solid;
+  padding: 12px 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 22%;
+}
+
+.contact .container .right form input[type=submit]:hover {
+  background-color: #FAB28E;
+  color: #75321C;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #282629;
+  color: #a6a6a6;
+  height: 130px;
+}
+
+footer .container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+footer .container > * {
+  width: 33.3%;
+}
+
+footer .container .copyright {
+  font-size: .9rem;
+  text-align: left;
+}
+
+footer .container .logo-footer {
+  text-decoration: none;
+  color: #9B8D71;
+  font-family: 'Arizonia', cursive;
+  font-size: 1.8rem;
+  font-size: 2.3rem;
+}
+
+footer .container .social-media i:nth-child(2) {
+  margin: 0 .6em;
+}
+/*# sourceMappingURL=style.css.map */

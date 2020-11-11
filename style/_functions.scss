@@ -1,0 +1,34 @@
+@mixin logoStyle {
+    text-decoration: none;
+    color: $light-yellow;
+    font-family: 'Arizonia', cursive;
+    font-size: 1.8rem;
+}
+
+@mixin btnOut {
+    background-color: $light-coral;
+    color: $light-brown;
+    font-weight: 700;
+    border: $light-coral 2px solid;
+    text-transform: uppercase;
+    padding: 12px 14px;
+    cursor: pointer;
+    &:hover{
+        background-color: $light-brown;
+        color: $light-coral;
+    }
+}
+
+@mixin btnIn {
+    background-color: transparent;
+    color: $light-coral;
+    font-weight: 700;
+    border: $light-coral 2px solid;
+    padding: 12px 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover{
+        background-color: $light-coral;
+        color: $light-brown;
+    }
+}
