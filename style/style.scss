@@ -30,28 +30,24 @@ h1, h2, h3, h4, h5{
 @import '_tablet.scss';
 
 
-@media only screen and(max-width : 450px){
-    button, input[type=submit]{
-        padding: 10px 11px !important;
+@media screen and  (max-width : 450px){
+
+    section.book_a_table{
+    height: 600px;
     }
 
     .menu{
     background-color: $light-black;
         .container{
+            .menu-header{
+                h2{
+                    text-align: center;
+                }
+            }
             .content{
-                display: flex;
-                .left, .right{
-                    width: 100%;
-                }
-                .left{
-                    margin-right: 2em;
-                }
-            
                 .meal{
                     transition: all .2s ease-in-out;
-                    display: flex;
                     margin: 2em 0;
-                    color: white;
                     background-color: $light-coral;
                     flex-direction: column;
                     .photo-meal-container{
@@ -63,8 +59,6 @@ h1, h2, h3, h4, h5{
                         height: 10em;
                         span.photo-meal{
                             background: none;
-                            display: block;
-                            border-radius: 50%;
                         }
                     }
                     .details{
@@ -73,15 +67,13 @@ h1, h2, h3, h4, h5{
                         .name-and-contents{
                             h3{
                                 margin: .6em 0;
+                                border-bottom: 2px solid $white;
+                                padding-bottom: 6px;
                             }
                         }
                         .prise{
-                            margin: .6em 0;
                             span{
-                                color: $light-coral;
-                                margin-left: 19px;
-                                font-size: 1.3rem;
-                                font-weight: bold;
+                                color: $light-black;
                             }
                         }
                     }
@@ -96,6 +88,73 @@ h1, h2, h3, h4, h5{
         }
     }
 
-    
+    .plate-of-the-day{
+    height: auto;
+    .container{
+        .content{
+            text-align: justify;
+            padding: 1em 2.3em;
+            h3{
+                text-align: center;
+            }
+            
+            button{
+                margin-top: 7px;
+            }
+        }
+    }
+    }
+
+    .contact{
+        .container{
+            .left{
+                word-wrap: break-word;
+                p {
+                    text-align: justify;
+                }
+                .contact-information{
+                    display: inline-block;
+                    .content{
+                        display: flex;
+                        flex-wrap: wrap;
+                        i{
+                            text-align: center;
+                            margin: auto 0;
+                            margin-right: .7em;
+
+                        }
+                        span{
+                            width: 79%;
+                        }
+                    }
+                }
+            }
+
+            .right{
+                width: 100%;
+                form{
+                    justify-content: center;
+                    input, textarea{
+                        min-width: 100px;
+                        margin: .3em 0;
+                        background-color: transparent;
+                        border: solid 1px $light-white;
+                        padding: 1em 0 1em 1em;
+                        color: $white;
+                        &::placeholder-shown{
+                            color: $light-white;
+                        }
+                    }
+                    textarea{
+                        resize: none;
+                        min-height: 6em;
+                    }
+                    input[type=submit]{
+                        margin: 1em auto 0 auto;
+                    }
+                }
+            }
+        }
+    }
 
 };
