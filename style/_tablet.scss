@@ -1,0 +1,125 @@
+@media only screen and(max-width : 900px){
+    button, input[type=submit]{
+        padding: 10px 11px !important;
+    }
+    header{
+    .content{
+        flex-direction: column;
+        height: auto;
+        .left{
+            justify-content: center;
+            .logo{
+                padding: 0.1em 1em;
+                font-size: 2.6rem;
+                margin-top: 10px;
+            }
+        }
+        nav.right{
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    }
+
+    section.book_a_table{
+    height: 400px;
+    }
+
+    .slogan{
+        .container{
+            width: 70%;
+            height: 120;
+        }
+    }
+
+    .menu{
+    .container{
+        .content{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .left, .right{
+                width: 100%;
+            }
+            .left{
+                margin-right: 2em;
+            }
+            .meal{
+                .details{
+                    .prise{
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+    }
+
+    .plate-of-the-day{
+        .container{
+            justify-content: center;            
+        }
+    }
+
+    .contact{
+    height: auto;
+    .container{
+        margin: 2em 0;
+        flex-direction: column;
+        .left{
+            width: 100%;
+            .contact-information{
+                .content{
+                    i{
+                        margin-right: 1em;
+                    }
+                }
+            }
+        }
+
+        .right{
+            width: 100%;
+            form{
+                justify-content: center;
+                input, textarea{
+                    min-width: 100px;
+                    margin: .3em 0;
+                    background-color: transparent;
+                    border: solid 1px $light-white;
+                    padding: 1em 0 1em 1em;
+                    color: $white;
+                    &::placeholder-shown{
+                        color: $light-white;
+                    }
+                }
+                textarea{
+                    resize: none;
+                    min-height: 6em;
+                }
+                input[type=submit]{
+                    margin: 1em auto 0 auto;
+                }
+            }
+        }
+    }
+    }
+
+    footer{
+    .container{
+        & > *{
+                width: 50%;
+            }
+        .logo-footer{
+            display: none;
+        }
+        .social-media{
+            a{
+                i{
+                    padding: .2em;
+                }
+            }
+        }
+    }
+}
+
+};

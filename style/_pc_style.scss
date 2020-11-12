@@ -1,0 +1,353 @@
+header{
+    background-color: $light-black;
+    .content{
+        display: flex;
+        justify-content: space-between;
+        width: $widthPC;
+        margin: 0 auto;    
+        height: auto;
+        min-height: 70px;
+        .left{
+            display: flex;
+            align-items: center;
+            .logo{
+                @include logoStyle();
+                font-size: 2.8rem;
+                padding: .6rem 1em .6rem 0em;
+            }
+        }
+        nav.right{
+            display: flex;
+            align-items: center;
+
+            ul{
+                display: flex;
+                padding: 0;
+                li{
+                    list-style: none;
+                    margin: 0 15px;
+                    transition: .3s ;
+
+                    a{
+                        color: $white;
+                        text-decoration: none;
+                        border-bottom:1px solid $light-black;
+                        transition: all .2s ease-in-out !important;
+                        &:hover{
+                            border-bottom: 1px solid $white;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+section.book_a_table{
+    background-image: url(/photos/header-photo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    .container{
+        height: inherit;
+        display: flex;
+        align-items: center;
+        .content{
+            span{
+                @include logoStyle();
+                color: $light-coral;
+                font-size: 3rem;
+            }
+            p{
+                margin: 0;
+                color: $white;
+                font-size: 1.3rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                margin: 10px 0;
+            }
+            .btn-view-menu{
+               @include btnIn();
+                margin-right: 5px;
+            }
+            .btn-reservation{
+                @include btnOut();
+                &:hover{
+                    border: 2px solid $light-brown;
+                }
+            }
+        }
+        
+    }
+      
+}
+
+.slogan{
+    background-color: $light-coral;
+    .container{
+        height: 150px;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%;
+    }
+    .left{
+         p{
+            margin: 0;
+            margin-right: 1em;
+            font-weight: 700;
+        }
+    }
+    .right{
+        .btn-reservation{
+            @include btnOut();
+            border: 2px solid $light-brown;
+        }
+    }
+}
+
+.menu{
+    background-color: $light-black;
+    .container{
+        .menu-header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 4em;
+            h2{
+                color: $white;
+                text-transform: uppercase;
+                margin: 0;
+                padding: 0;
+            }
+            span{
+                @include logoStyle();
+                color: $light-coral;
+                margin-top: .3em;
+                position: relative;
+                &::after{
+                    content: "";
+                    display: inherit;
+                    position: relative;
+                    width: 88px;
+                    bottom: -22px;
+                    border-bottom: 1px solid #FAB28E;
+                    margin: 0 auto;
+
+                }
+            }
+        }
+        .content{
+            display: flex;
+            .left, .right{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .left{
+                margin-right: 2em;
+            }
+           
+            .meal{
+                display: flex;
+                margin: 3em 0;
+                color: white;
+                .photo-meal-container{
+                    margin-right: 3em;
+                    span.photo-meal{
+                        display: block;
+                        height: 5em;
+                        width: 5em;
+                        background-image: url('/photos/Fish-Fillet.jpg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        border-radius: 50%;
+                        background-position: center;
+                    }
+                }
+                .details{
+                    display: flex;
+                    .name-and-contents{
+                        h3{
+                            margin: .6em 0;
+                        }
+                    }
+                    .prise{
+                        margin: .6em 0;
+                        span{
+                            color: $light-coral;
+                            margin-left: 19px;
+                            font-size: 1.3rem;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.plate-of-the-day{
+    background-image: url('/photos/plate-of-the-day.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    .container{
+        padding: 6em 0;
+        display: flex;
+        flex-direction: row-reverse;
+        .content{
+            background-color: $light-black;
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: $white;
+            padding: 0 4em;
+            max-width: 370px;
+            h3{
+                @include logoStyle();
+                margin-bottom: 25px;
+                font-size: 2.3rem;
+                color: $light-coral;
+            }
+            span{
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 1.3rem;
+            }
+            button{
+                @include btnIn();
+            }
+        }
+    }
+}
+
+.contact{
+    background-color: $light-black;
+    color: $white;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        justify-content: space-between;
+        .left{
+            width: 30%;
+            h2{
+                letter-spacing: 2px;
+                font-size: 1.8em;
+            }
+            p{
+                color: $light-white;
+            }
+            .contact-information{
+                padding-top: 1em;
+                .content{
+                    margin-bottom: 1em;
+                    font-weight: 700;
+                    i{
+                        color: $light-coral;
+                        margin-right: 3.8em;
+                        width: 22px;
+                    }
+                }
+            }
+        }
+
+        .right{
+            width: 50%;
+            form{
+                display: flex;
+                flex-direction: column;
+                input, textarea{
+                    min-width: 100px;
+                    margin: .3em 0;
+                    background-color: transparent;
+                    border: solid 1px $light-white;
+                    padding: 1em 0 1em 1em;
+                    color: $white;
+                    &::placeholder-shown{
+                        color: $light-white;
+                    }
+                }
+                textarea{
+                    resize: none;
+                    min-height: 6em;
+                }
+                input[type=submit]{
+                    @include btnIn();
+                    width: 22%;
+                    min-width: 146.517px;
+                }
+            }
+           
+        }
+    }
+}
+
+footer{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background-color: $dark-gray;
+    color: $light-white;
+    height: 130px;
+    .container{
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        & > *{
+                width: 33.3%;
+            }
+        .copyright{
+            font-size: .9rem;
+            text-align: left;
+        }
+        .logo-footer{
+            @include logoStyle();
+            font-size: 2.3rem;
+        }
+        .social-media{
+            a{
+                color: $light-white;
+                i{
+                    width: 30px;
+                    padding: .3em;
+                    border-radius: 50%;
+                    &:hover{
+                        opacity: .8;
+                    }
+                }
+                
+                &:nth-child(1){
+                    i{
+                        background-color: $light-coral;
+                        color: $white;
+                    }
+                }
+                &:nth-child(2){
+                    margin: 0 .3em;
+                    i{
+                        background-color: $light-coral;
+                        color: $white;
+                    }
+                }
+                &:nth-child(3){
+                    i{
+                        text-align: center;
+                        color: $white;
+                        background-color: $light-coral;
+                    }
+                }
+            }
+        }
+    }
+}
+
